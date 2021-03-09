@@ -23,7 +23,7 @@ void setup()
 }
 void loop()
 {
-RxPinState1=digitalRead(RxPin);
+RxPinState1=digitalRead(RxPin1);
 
 if(RxPinState1== LOW && k==0)
  {
@@ -31,7 +31,7 @@ if(RxPinState1== LOW && k==0)
   lcd.setCursor(0, 0);
   lcd.print("              ");
   lcd.setCursor(0, 1);
-  lcd.print("-->WEAR HELMET<---");
+  lcd.print("-->PLEASE WEAR HELMET<---");
   digitalWrite(relay, LOW);
   digitalWrite(buzzer, HIGH);
   
@@ -55,7 +55,7 @@ if(RxPinState1== LOW && k>=1)
   break;
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("-->WEAR HELMET<-");
+  lcd.print("-->PLEASE WEAR HELMET<-");
   lcd.setCursor(0, 1);    
   lcd.print(j);
   delay(1000);
