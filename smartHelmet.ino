@@ -23,7 +23,7 @@ void setup()
 }
 void loop()
 {
-RxPinState1=digitalRead(RxPin1);
+RxPinState1=digitalRead(RxPin);
 
 if(RxPinState1== LOW && k==0)
  {
