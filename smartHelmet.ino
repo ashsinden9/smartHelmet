@@ -17,7 +17,7 @@ void setup()
  lcd.setCursor(0, 0);
  lcd.print(" ****BIKER****");
  lcd.setCursor(0, 1);
- lcd.print(" SAFETY SYSTEM  ");
+ lcd.print(" SAFETY SYSTEM ");
  delay(500);
 }
 }
@@ -32,8 +32,8 @@ if(RxPinState1== LOW && k==0)
   lcd.print("              ");
   lcd.setCursor(0, 1);
   lcd.print("-->PLEASE WEAR HELMET<---");
-  digitalWrite(relay, LOW);
-  digitalWrite(buzzer, HIGH);
+  digitalWrite(relay, );
+  digitalWrite(buzzer, );
   
  }
 if(RxPinState1== HIGH) 
