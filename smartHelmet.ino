@@ -32,8 +32,8 @@ if(RxPinState1== LOW && k==0)
   lcd.print("              ");
   lcd.setCursor(0, 1);
   lcd.print("-->PLEASE WEAR HELMET<---");
-  digitalWrite(relay, );
-  digitalWrite(buzzer, );
+  digitalWrite(relay, LOW);
+  digitalWrite(buzzer, HIGH);
   
  }
 if(RxPinState1== HIGH) 
